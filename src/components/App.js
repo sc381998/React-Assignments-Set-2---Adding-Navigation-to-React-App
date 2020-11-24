@@ -8,23 +8,25 @@ import LocationDisplay from "./LocationDisplay";
 class App extends Component {
   render() {
     return (
-      <div id="main">
-        <Link to="/">
-          <button>Home</button>
-        </Link>
-        <Link to="/about">
-          <button>About</button>
-        </Link>
-        <BrowserRouter>
+      <BrowserRouter>
+        <div id="main">
+          <Link to="/">
+            <button>Home</button>
+          </Link>
+          <Link to="/about">
+            <button>About</button>
+          </Link>
+
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
 
             <Route component={NoMatch} />
           </Switch>
-        </BrowserRouter>
-        <LocationDisplay />
-      </div>
+
+          <LocationDisplay />
+        </div>
+      </BrowserRouter>
     );
   }
 }
