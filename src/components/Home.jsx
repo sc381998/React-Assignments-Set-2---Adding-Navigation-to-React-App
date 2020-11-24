@@ -7,9 +7,6 @@ export default function Home() {
     <>
       <h1>You are home</h1>
 
-      <Link to="/">Home</Link>
-      <Link to="/about">About</Link>
-
       {/* <LocationDisplay /> */}
     </>
   );

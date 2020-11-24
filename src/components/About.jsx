@@ -5,8 +5,7 @@ export default function About() {
   return (
     <>
       <h1>You are on the about page</h1>
-      <Link to="/">Home</Link>
-      <Link to="/about">About</Link>
+
       {/* <LocationDisplay /> */}
     </>
   );
