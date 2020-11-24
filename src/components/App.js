@@ -19,7 +19,7 @@ class App extends Component {
 
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route path="/about" component={About} />
+            <Route exact path="/about" component={About} />
 
             <Route component={NoMatch} />
           </Switch>
