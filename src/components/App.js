@@ -4,6 +4,7 @@ import "../styles/App.css";
 import Home from "./Home";
 import About from "./About";
 import NoMatch from "./NoMatch";
+import LocationDisplay from "./LocationDisplay";
 class App extends Component {
   render() {
     return (
@@ -15,6 +16,7 @@ class App extends Component {
             <Route component={NoMatch} />
           </Switch>
         </BrowserRouter>
+        <LocationDisplay />
       </div>
     );
   }
