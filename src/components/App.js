@@ -4,9 +4,17 @@ import "../styles/App.css";
 import Home from "./Home";
 import About from "./About";
 import NoMatch from "./NoMatch";
-import LocationDisplay from "./LocationDisplay";
+import { useLocation } from "react-router-dom";
 class App extends Component {
   render() {
+    function LocationDisplay() {
+      const location = useLocation();
+      return (
+        <>
+          <h3 data-testid="location-display">{location.pathname}</h3>
+        </>
+      );
+    }
     return (
       <BrowserRouter>
         <div id="main">
